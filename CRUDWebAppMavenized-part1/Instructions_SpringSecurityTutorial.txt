@@ -1,0 +1,35 @@
+Spring Security basics tutorial
+Let's first take a look at my sample program.
+It's just a normal web application that I created in my previous tutes.
+Now let's apply Spring Security:
+
+Steps:
+1. Add Spring Security libraries in pom.xml
+ - let maven download the dependency jars
+2. Create a separate xml file for security configurations (security-context.xml)
+3. Configure web.xml to include Spring Security
+
+Now let's test if Spring Security will be able to secure our resources.
+- So Spring Security shows default built-in login page
+- let's try to put bad data
+- now it's authorized
+
+4. Let's try to configure jsp to put logout
+ - Include the SS taglibs
+ - let's try
+
+*Now see this issue when we click the browser's back button
+- we're back to the secured resource which is not good!
+- we will resolve it by adding this configuration. solved!
+
+5. Now let's try to hide some elements in jsp depending on user's role.
+- Only admin can manage student records
+
+That's the basics of Spring Security.
+You can do a lot of other things to secure your web application.
+Stay tuned in my channel for advance topics in Spring Security like
+- customizing form login and error pages
+- providing users through JDBC, or other sources.
+
+
+Don't forget to subscribe!!! Thanks.
