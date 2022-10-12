@@ -1,0 +1,23 @@
+Spring Security Tutorial Part 2
+"Implementing DAO Authentication Provider"
+"Let's go back to the previous secured application using Basic configurations"
+
+Steps:
+1. Add database tables for Users and Roles
+	- Let's populate some data while we create tables.
+	- I'll be using MD5 for password protection
+	- You can create User management module if you have time.
+2. Add models for these tables
+	- Let's make them Entities
+	- I'm using ManyToMany mapping since Many users can have many roles and many roles can              	be assigned to many users.
+3. Add DAO component for Users
+4. Add UserDetailsService implementation class
+	- this class will be used by Spring Security to pickup users and authenticate them internally.
+5. Add configuration changes in security xml file
+6. Test
+	- Let's try adding some users and roles
+
+*Notes
+	- You can use many hashing algoriths to strengthen you password protections such as SHA with 
+	with different levels
+	- Having Users stored in database is a good thing to manage users.

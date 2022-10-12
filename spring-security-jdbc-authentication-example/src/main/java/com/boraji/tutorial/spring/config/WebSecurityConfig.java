@@ -33,7 +33,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	}
 
 	public static void main(String[] args) {
-		String encoded = new BCryptPasswordEncoder().encode("user@123");
+		String encoded = new BCryptPasswordEncoder().encode("admin");
 		System.out.println(encoded);
 	}
 }
